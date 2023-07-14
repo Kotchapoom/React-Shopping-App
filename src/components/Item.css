@@ -1,47 +1,97 @@
-.item-container{
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
+.item-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
 }
 
 img {
-    width: 200px;
-    height: 170px;
-    margin-right: 10px;
+  width: 200px;
+  height: 170px;
+  margin-right: 10px;
 }
 
 .name {
-    width: 300px;
-    margin: right 10px;
-    ;
+  width: 150px;
 }
 
-.quantity{
-    margin-right: 60px;
+.quantity {
+  margin: 60px;
 }
 
-input{
-    border: none;
+.product {
+  font-size: 14px;
+  margin: 0 50px;
+}
+
+input {
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  background: rgb(202, 7, 7);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.total-price{
+    margin: 40px;
+}
+
+.increase {
+  background: rgb(223, 223, 223);
+  color: rgb(0, 0, 0);
+}
+
+.delete {
+  font-size: 24px;
+  margin: auto;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.delete:hover {
+  background-color: rgb(126, 8, 8);
+}
+
+@media only screen and (max-width: 428px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+
+  }
+  img {
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  .product {
+    font-size: 14px;
     text-align: center;
-    width: 32px;
-    font-size: 16px;
-}
+  }
+  .quantity {
+    margin: 0;
+  }
 
-button{
-    border: none;
-    background: rgb(202, 7, 7);
-    color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
+  .total-price{
+    margin: 10px;
+}
 }
