@@ -16,3 +16,10 @@ header {
     font-size: 18px;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 980px) {
+    .header-container {
+        width: 95%;
+
+    }
+}
